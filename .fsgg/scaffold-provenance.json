@@ -1,0 +1,506 @@
+{
+  "schemaVersion": 1,
+  "generator": {
+    "id": "FS.GG.SDD.Artifacts",
+    "version": "1.8.0"
+  },
+  "requiredMinimumCliVersion": "1.4.0-preview.1",
+  "providerName": "fable-game",
+  "providerContractVersion": "1.1.0",
+  "templateRef": "fs-gg-fable-game",
+  "outcome": "providerSucceeded",
+  "producedPaths": [
+    {
+      "path": ".agents/skills/fable-http-codecs/SKILL.md",
+      "owner": "generatedProduct",
+      "sha256": "0966388c4db9350d96c246f1d280e5830220dc8589ee95684597046f91f1d776"
+    }
+  ],
+  "mirroredPaths": [
+    {
+      "path": ".claude/skills/fable-http-codecs/SKILL.md",
+      "owner": "mirrored",
+      "sha256": "0966388c4db9350d96c246f1d280e5830220dc8589ee95684597046f91f1d776"
+    }
+  ],
+  "sddOwnedPaths": [],
+  "driverPaths": [
+    {
+      "path": ".agents/skills/padd-item/SKILL.md",
+      "owner": "driver",
+      "sha256": "60938ac4fc0f147de8be89f125a4a78a958be52ef1b879c33876f901d6486247"
+    },
+    {
+      "path": ".agents/skills/padd-item/agents/openai.yaml",
+      "owner": "driver",
+      "sha256": "b5e453d33a40ed8aa0a14a34b01b01fbe72f351d6269208a77e883b7efac02f8"
+    },
+    {
+      "path": ".agents/skills/work-board-best/SKILL.md",
+      "owner": "driver",
+      "sha256": "4b9c0fd59cfd68a16f7acc0acef726b10bb2903380af5cfd6cc2b0e5d7376868"
+    },
+    {
+      "path": ".agents/skills/work-board-best/agents/openai.yaml",
+      "owner": "driver",
+      "sha256": "9d85ffa0636c28f3d4a6713217640b3572bb003ec5759ac5a00a3851a10ff548"
+    },
+    {
+      "path": ".agents/skills/work-board-normal/SKILL.md",
+      "owner": "driver",
+      "sha256": "55f96951dc04fd02cdc3411dd72ce0f6fcaca9c64a2daafd6270fc0d45adf05b"
+    },
+    {
+      "path": ".agents/skills/work-board-normal/agents/openai.yaml",
+      "owner": "driver",
+      "sha256": "2058fafb85ceaf1b6bed448a4cb4f6b51bfdbee05c9eb062af0647cb27dc1ec0"
+    },
+    {
+      "path": ".agents/skills/work-board/SKILL.md",
+      "owner": "driver",
+      "sha256": "8d70494eb5a63600f1bc323119f279bb3c616b4e67ff0de634ae4dfb7fea4f48"
+    },
+    {
+      "path": ".agents/skills/work-board/agents/openai.yaml",
+      "owner": "driver",
+      "sha256": "a4d2b19cde3fd490c669da9a007b16620a106586efc30c32a02efd92f58d0433"
+    },
+    {
+      "path": ".agents/skills/work-board/references/backlog-triage.md",
+      "owner": "driver",
+      "sha256": "2fc359707e81ff48a197931d0baae4c2fb8e6af036954024641198bd6407c354"
+    },
+    {
+      "path": ".agents/skills/work-board/references/deep-detail.md",
+      "owner": "driver",
+      "sha256": "87aae5dbb5834e6ecf98c3a656eddca573f8fe5af35c8adf77323a4e03981893"
+    },
+    {
+      "path": ".agents/skills/work-board/references/feedback-contract.md",
+      "owner": "driver",
+      "sha256": "902d8d2ded50626492e6254a80c5ba0bb080bd47c3d23795ec5700982ee1bd41"
+    },
+    {
+      "path": ".agents/skills/work-board/references/host-loop.md",
+      "owner": "driver",
+      "sha256": "88c5d8152eb7861b01806954539c175b69f853796f5bacfa49aabe2279cbbea3"
+    },
+    {
+      "path": ".agents/skills/work-board/references/workspace-scope.md",
+      "owner": "driver",
+      "sha256": "9435aa1fcc975aba3c3f22066b708a3061b13e9181f4c03fce6dc0526807e245"
+    },
+    {
+      "path": ".agents/skills/work-roadmap/SKILL.md",
+      "owner": "driver",
+      "sha256": "0ef5eb6927f398dbfa3ea3aeaf03b10064ed2a944e35e25e19c773760b5a54d8"
+    },
+    {
+      "path": ".agents/skills/work-roadmap/agents/openai.yaml",
+      "owner": "driver",
+      "sha256": "d15ec5205fcd2d3698bcfb5b82237036ed115c1a28bf4acd03aa4a8dd55def22"
+    },
+    {
+      "path": ".agents/skills/work-roadmap/references/critique-contract.md",
+      "owner": "driver",
+      "sha256": "a5a6268aba163e1a735370de3114105eee9cc67dddfa4f41431c48ba884545d4"
+    },
+    {
+      "path": ".agents/skills/work-roadmap/references/deep-detail.md",
+      "owner": "driver",
+      "sha256": "8ebce8de2de77b8eb75de68eafe4dc68fd202557df1b0e47aff182c4c3dafa82"
+    },
+    {
+      "path": ".agents/skills/work-roadmap/references/feedback-contract.md",
+      "owner": "driver",
+      "sha256": "7342aa0c2c86d2f157b360741426f2769d901c67e1f6ef4549ddbd83f12937f1"
+    },
+    {
+      "path": ".agents/skills/work-roadmap/references/host-loop.md",
+      "owner": "driver",
+      "sha256": "4307c49c060eb20e864cd982a39fcecdad91763acfe4218a3259e3fb783a448e"
+    },
+    {
+      "path": ".agents/skills/work-roadmap/references/lifecycle-log.md",
+      "owner": "driver",
+      "sha256": "86452edc1985dd73b77ce06c1623306100ddc7fd415127d7b2394f7d32103700"
+    },
+    {
+      "path": ".agents/skills/work-roadmap/references/roadmap-ledger.md",
+      "owner": "driver",
+      "sha256": "fd7b535511327319467da7c4082afdf4b5bd7ca46c258a7129eba14c3fe6c679"
+    },
+    {
+      "path": ".agents/skills/work-roadmap/scripts/fsgg_telemetry_defaults.py",
+      "owner": "driver",
+      "sha256": "15828fd867cf35a69a9e41369a15489927c2d25ae6bb1ceda5d7a007c1a2884d"
+    },
+    {
+      "path": ".agents/skills/work-roadmap/scripts/roadmap-telemetry.py",
+      "owner": "driver",
+      "sha256": "87cbc21fccc1db0ee1d0cd08b22b7d78bc5b23743f4495cbbaef429cf30e40bd"
+    },
+    {
+      "path": ".claude/skills/padd-item/SKILL.md",
+      "owner": "driver",
+      "sha256": "60938ac4fc0f147de8be89f125a4a78a958be52ef1b879c33876f901d6486247"
+    },
+    {
+      "path": ".claude/skills/padd-item/agents/openai.yaml",
+      "owner": "driver",
+      "sha256": "b5e453d33a40ed8aa0a14a34b01b01fbe72f351d6269208a77e883b7efac02f8"
+    },
+    {
+      "path": ".claude/skills/work-board-best/SKILL.md",
+      "owner": "driver",
+      "sha256": "4b9c0fd59cfd68a16f7acc0acef726b10bb2903380af5cfd6cc2b0e5d7376868"
+    },
+    {
+      "path": ".claude/skills/work-board-best/agents/openai.yaml",
+      "owner": "driver",
+      "sha256": "9d85ffa0636c28f3d4a6713217640b3572bb003ec5759ac5a00a3851a10ff548"
+    },
+    {
+      "path": ".claude/skills/work-board-normal/SKILL.md",
+      "owner": "driver",
+      "sha256": "55f96951dc04fd02cdc3411dd72ce0f6fcaca9c64a2daafd6270fc0d45adf05b"
+    },
+    {
+      "path": ".claude/skills/work-board-normal/agents/openai.yaml",
+      "owner": "driver",
+      "sha256": "2058fafb85ceaf1b6bed448a4cb4f6b51bfdbee05c9eb062af0647cb27dc1ec0"
+    },
+    {
+      "path": ".claude/skills/work-board/SKILL.md",
+      "owner": "driver",
+      "sha256": "8d70494eb5a63600f1bc323119f279bb3c616b4e67ff0de634ae4dfb7fea4f48"
+    },
+    {
+      "path": ".claude/skills/work-board/agents/openai.yaml",
+      "owner": "driver",
+      "sha256": "a4d2b19cde3fd490c669da9a007b16620a106586efc30c32a02efd92f58d0433"
+    },
+    {
+      "path": ".claude/skills/work-board/references/backlog-triage.md",
+      "owner": "driver",
+      "sha256": "2fc359707e81ff48a197931d0baae4c2fb8e6af036954024641198bd6407c354"
+    },
+    {
+      "path": ".claude/skills/work-board/references/deep-detail.md",
+      "owner": "driver",
+      "sha256": "87aae5dbb5834e6ecf98c3a656eddca573f8fe5af35c8adf77323a4e03981893"
+    },
+    {
+      "path": ".claude/skills/work-board/references/feedback-contract.md",
+      "owner": "driver",
+      "sha256": "902d8d2ded50626492e6254a80c5ba0bb080bd47c3d23795ec5700982ee1bd41"
+    },
+    {
+      "path": ".claude/skills/work-board/references/host-loop.md",
+      "owner": "driver",
+      "sha256": "88c5d8152eb7861b01806954539c175b69f853796f5bacfa49aabe2279cbbea3"
+    },
+    {
+      "path": ".claude/skills/work-board/references/workspace-scope.md",
+      "owner": "driver",
+      "sha256": "9435aa1fcc975aba3c3f22066b708a3061b13e9181f4c03fce6dc0526807e245"
+    },
+    {
+      "path": ".claude/skills/work-roadmap/SKILL.md",
+      "owner": "driver",
+      "sha256": "0ef5eb6927f398dbfa3ea3aeaf03b10064ed2a944e35e25e19c773760b5a54d8"
+    },
+    {
+      "path": ".claude/skills/work-roadmap/agents/openai.yaml",
+      "owner": "driver",
+      "sha256": "d15ec5205fcd2d3698bcfb5b82237036ed115c1a28bf4acd03aa4a8dd55def22"
+    },
+    {
+      "path": ".claude/skills/work-roadmap/references/critique-contract.md",
+      "owner": "driver",
+      "sha256": "a5a6268aba163e1a735370de3114105eee9cc67dddfa4f41431c48ba884545d4"
+    },
+    {
+      "path": ".claude/skills/work-roadmap/references/deep-detail.md",
+      "owner": "driver",
+      "sha256": "8ebce8de2de77b8eb75de68eafe4dc68fd202557df1b0e47aff182c4c3dafa82"
+    },
+    {
+      "path": ".claude/skills/work-roadmap/references/feedback-contract.md",
+      "owner": "driver",
+      "sha256": "7342aa0c2c86d2f157b360741426f2769d901c67e1f6ef4549ddbd83f12937f1"
+    },
+    {
+      "path": ".claude/skills/work-roadmap/references/host-loop.md",
+      "owner": "driver",
+      "sha256": "4307c49c060eb20e864cd982a39fcecdad91763acfe4218a3259e3fb783a448e"
+    },
+    {
+      "path": ".claude/skills/work-roadmap/references/lifecycle-log.md",
+      "owner": "driver",
+      "sha256": "86452edc1985dd73b77ce06c1623306100ddc7fd415127d7b2394f7d32103700"
+    },
+    {
+      "path": ".claude/skills/work-roadmap/references/roadmap-ledger.md",
+      "owner": "driver",
+      "sha256": "fd7b535511327319467da7c4082afdf4b5bd7ca46c258a7129eba14c3fe6c679"
+    },
+    {
+      "path": ".claude/skills/work-roadmap/scripts/fsgg_telemetry_defaults.py",
+      "owner": "driver",
+      "sha256": "15828fd867cf35a69a9e41369a15489927c2d25ae6bb1ceda5d7a007c1a2884d"
+    },
+    {
+      "path": ".claude/skills/work-roadmap/scripts/roadmap-telemetry.py",
+      "owner": "driver",
+      "sha256": "87cbc21fccc1db0ee1d0cd08b22b7d78bc5b23743f4495cbbaef429cf30e40bd"
+    },
+    {
+      "path": ".fsgg/routine-development.json",
+      "owner": "driver",
+      "sha256": "631b83bd0b2204016679497917411dc90fa53e4e88c625b043942c0a82c0070d"
+    },
+    {
+      "path": ".github/workflows/routine-eligibility.yml",
+      "owner": "driver",
+      "sha256": "c5ce8b1b019a4a6dd0a48332664b60cdccee59725b12284bd3dfac3295c7b72d"
+    },
+    {
+      "path": "scripts/check-claim-generation.py",
+      "owner": "driver",
+      "sha256": "7995b5331f2d9564313f6d317f733f53174781aeb3bd50ecfa28755c036553c2"
+    },
+    {
+      "path": "scripts/check-routine-eligibility-envelope.py",
+      "owner": "driver",
+      "sha256": "f311a6300f48cf0bca763c2e4092c3f026c13223c9868a9fd1afb611fb94ffaa"
+    },
+    {
+      "path": "scripts/lib/gate.py",
+      "owner": "driver",
+      "sha256": "9511b7f62ea101a397fd375d8653fc0b4fcb9a07ddb583e874d3cd60cc886d6c"
+    },
+    {
+      "path": "tools/fsgg_telemetry_defaults.py",
+      "owner": "driver",
+      "sha256": "15828fd867cf35a69a9e41369a15489927c2d25ae6bb1ceda5d7a007c1a2884d"
+    },
+    {
+      "path": "tools/routine-delivery.py",
+      "owner": "driver",
+      "sha256": "045d38b4ab93434fc0cd00e0fc927f2923091ab4e5dba886f720167af52eab0e"
+    }
+  ],
+  "gameSkillPaths": [
+    {
+      "path": ".agents/skills/fs-gg-collision/SKILL.md",
+      "owner": "gameSkill",
+      "sha256": "8bd79af6dfe1a0f8abbc57cf6d0a3a81bb5a0bbe6aa3e6f36f82a2e770e9b57f"
+    },
+    {
+      "path": ".agents/skills/fs-gg-game-core/SKILL.md",
+      "owner": "gameSkill",
+      "sha256": "712f21c2ce2fa7866e7696463ae8ebb8b3a4afd2ddc73624c73514e3bd5d8e77"
+    },
+    {
+      "path": ".agents/skills/fs-gg-game-fable/SKILL.md",
+      "owner": "gameSkill",
+      "sha256": "443a82d24a0b4bbd21f4499b06f6e3d12b95a36a858f3880b414b74cae1a5c50"
+    },
+    {
+      "path": ".agents/skills/fs-gg-persistence/SKILL.md",
+      "owner": "gameSkill",
+      "sha256": "9461822e5c282f0cac37aa0a88720fbb910319a6571d74bbcb1119eeb48530fb"
+    },
+    {
+      "path": ".agents/skills/fs-gg-replay/SKILL.md",
+      "owner": "gameSkill",
+      "sha256": "51a45640aa9ef2331186f526fc30e4a2627920ed27dd687c02266d0146982048"
+    },
+    {
+      "path": ".agents/skills/fs-gg-rules/SKILL.md",
+      "owner": "gameSkill",
+      "sha256": "c656c3b73d946d4ff92d547a92fba22aadcdb72c0edb85b59942aa95f9abf6bf"
+    },
+    {
+      "path": ".claude/skills/fs-gg-collision/SKILL.md",
+      "owner": "gameSkill",
+      "sha256": "8bd79af6dfe1a0f8abbc57cf6d0a3a81bb5a0bbe6aa3e6f36f82a2e770e9b57f"
+    },
+    {
+      "path": ".claude/skills/fs-gg-game-core/SKILL.md",
+      "owner": "gameSkill",
+      "sha256": "712f21c2ce2fa7866e7696463ae8ebb8b3a4afd2ddc73624c73514e3bd5d8e77"
+    },
+    {
+      "path": ".claude/skills/fs-gg-game-fable/SKILL.md",
+      "owner": "gameSkill",
+      "sha256": "443a82d24a0b4bbd21f4499b06f6e3d12b95a36a858f3880b414b74cae1a5c50"
+    },
+    {
+      "path": ".claude/skills/fs-gg-persistence/SKILL.md",
+      "owner": "gameSkill",
+      "sha256": "9461822e5c282f0cac37aa0a88720fbb910319a6571d74bbcb1119eeb48530fb"
+    },
+    {
+      "path": ".claude/skills/fs-gg-replay/SKILL.md",
+      "owner": "gameSkill",
+      "sha256": "51a45640aa9ef2331186f526fc30e4a2627920ed27dd687c02266d0146982048"
+    },
+    {
+      "path": ".claude/skills/fs-gg-rules/SKILL.md",
+      "owner": "gameSkill",
+      "sha256": "c656c3b73d946d4ff92d547a92fba22aadcdb72c0edb85b59942aa95f9abf6bf"
+    }
+  ],
+  "renderingSkillPaths": [
+    {
+      "path": ".agents/skills/fs-gg-browser-audio/SKILL.md",
+      "owner": "audioSkill",
+      "sha256": "07d9a0277044162611cffb20089577565fcc0ef802ac71f0cbc668cf70c0818c"
+    },
+    {
+      "path": ".agents/skills/fs-gg-feedback-report/SKILL.md",
+      "owner": "renderingSkill",
+      "sha256": "1b6888de4b8ce96f61e7a98c2bb9e0b249cdca2cd90da7bec6884bdccf055fe2"
+    },
+    {
+      "path": ".agents/skills/fs-gg-feedback-report/scripts/FeedbackReportTool.fs",
+      "owner": "renderingSkill",
+      "sha256": "a2c60784a5821fcccad3c1d0961b85369266de2a37db4a08e9fa15b01fd0a3e4"
+    },
+    {
+      "path": ".agents/skills/fs-gg-feedback-report/scripts/feedback-tool.fsx",
+      "owner": "renderingSkill",
+      "sha256": "28b41c0ba94d581184a47b6560561c08b097abcaae248b9f72e6145954028929"
+    },
+    {
+      "path": ".agents/skills/fs-gg-game-shell/SKILL.md",
+      "owner": "renderingSkill",
+      "sha256": "f96f9d61176f94265a19d815194bcad38eda4447bf3714add88edbb07d88521b"
+    },
+    {
+      "path": ".agents/skills/fs-gg-keyboard-input/SKILL.md",
+      "owner": "renderingSkill",
+      "sha256": "950678226adbfc6456585adc77dfcf6f170b933e957d9582f3c450f2d06815ec"
+    },
+    {
+      "path": ".agents/skills/fs-gg-layout/SKILL.md",
+      "owner": "renderingSkill",
+      "sha256": "85c55e26ee42bd8d54533abcf6cb955d53e02651901be3c0e91bfe92dac92d62"
+    },
+    {
+      "path": ".agents/skills/fs-gg-scene/SKILL.md",
+      "owner": "renderingSkill",
+      "sha256": "a058c26b4503eca677ca338d2d9a010442138445712eb6f801206059f7ec61f3"
+    },
+    {
+      "path": ".agents/skills/fs-gg-styling/SKILL.md",
+      "owner": "renderingSkill",
+      "sha256": "24754ec5cb931deb6fcaf7d4b9e5926c42f4325dc4f67cb4852295de8b405ac9"
+    },
+    {
+      "path": ".agents/skills/fs-gg-svg-assets/SKILL.md",
+      "owner": "renderingSkill",
+      "sha256": "adccc361f6633585bf19218d94406bd15b1f001bf0d63d6ef40d821a7c6f4f82"
+    },
+    {
+      "path": ".agents/skills/fs-gg-svg-performance/SKILL.md",
+      "owner": "renderingSkill",
+      "sha256": "9cd65f7b1b24053717a5ef4e0b3c36b866e559cb3f32e79a383173ba34f06536"
+    },
+    {
+      "path": ".agents/skills/fs-gg-testing/SKILL.md",
+      "owner": "renderingSkill",
+      "sha256": "37bc28dcbb7454a489aeea925c17b006715630752797a2734fcef6685dd4f037"
+    },
+    {
+      "path": ".agents/skills/fs-gg-ui-widgets/SKILL.md",
+      "owner": "renderingSkill",
+      "sha256": "a975b5ec33c2fcf847a9075cf10c970090a2ed3728d19820baeffad352c9c44e"
+    },
+    {
+      "path": ".claude/skills/fs-gg-browser-audio/SKILL.md",
+      "owner": "audioSkill",
+      "sha256": "07d9a0277044162611cffb20089577565fcc0ef802ac71f0cbc668cf70c0818c"
+    },
+    {
+      "path": ".claude/skills/fs-gg-feedback-report/SKILL.md",
+      "owner": "renderingSkill",
+      "sha256": "1b6888de4b8ce96f61e7a98c2bb9e0b249cdca2cd90da7bec6884bdccf055fe2"
+    },
+    {
+      "path": ".claude/skills/fs-gg-feedback-report/scripts/FeedbackReportTool.fs",
+      "owner": "renderingSkill",
+      "sha256": "a2c60784a5821fcccad3c1d0961b85369266de2a37db4a08e9fa15b01fd0a3e4"
+    },
+    {
+      "path": ".claude/skills/fs-gg-feedback-report/scripts/feedback-tool.fsx",
+      "owner": "renderingSkill",
+      "sha256": "28b41c0ba94d581184a47b6560561c08b097abcaae248b9f72e6145954028929"
+    },
+    {
+      "path": ".claude/skills/fs-gg-game-shell/SKILL.md",
+      "owner": "renderingSkill",
+      "sha256": "f96f9d61176f94265a19d815194bcad38eda4447bf3714add88edbb07d88521b"
+    },
+    {
+      "path": ".claude/skills/fs-gg-keyboard-input/SKILL.md",
+      "owner": "renderingSkill",
+      "sha256": "950678226adbfc6456585adc77dfcf6f170b933e957d9582f3c450f2d06815ec"
+    },
+    {
+      "path": ".claude/skills/fs-gg-layout/SKILL.md",
+      "owner": "renderingSkill",
+      "sha256": "85c55e26ee42bd8d54533abcf6cb955d53e02651901be3c0e91bfe92dac92d62"
+    },
+    {
+      "path": ".claude/skills/fs-gg-scene/SKILL.md",
+      "owner": "renderingSkill",
+      "sha256": "a058c26b4503eca677ca338d2d9a010442138445712eb6f801206059f7ec61f3"
+    },
+    {
+      "path": ".claude/skills/fs-gg-styling/SKILL.md",
+      "owner": "renderingSkill",
+      "sha256": "24754ec5cb931deb6fcaf7d4b9e5926c42f4325dc4f67cb4852295de8b405ac9"
+    },
+    {
+      "path": ".claude/skills/fs-gg-svg-assets/SKILL.md",
+      "owner": "renderingSkill",
+      "sha256": "adccc361f6633585bf19218d94406bd15b1f001bf0d63d6ef40d821a7c6f4f82"
+    },
+    {
+      "path": ".claude/skills/fs-gg-svg-performance/SKILL.md",
+      "owner": "renderingSkill",
+      "sha256": "9cd65f7b1b24053717a5ef4e0b3c36b866e559cb3f32e79a383173ba34f06536"
+    },
+    {
+      "path": ".claude/skills/fs-gg-testing/SKILL.md",
+      "owner": "renderingSkill",
+      "sha256": "37bc28dcbb7454a489aeea925c17b006715630752797a2734fcef6685dd4f037"
+    },
+    {
+      "path": ".claude/skills/fs-gg-ui-widgets/SKILL.md",
+      "owner": "renderingSkill",
+      "sha256": "a975b5ec33c2fcf847a9075cf10c970090a2ed3728d19820baeffad352c9c44e"
+    }
+  ],
+  "effectiveParameters": [
+    {
+      "key": "bundle",
+      "value": "complete"
+    },
+    {
+      "key": "lifecycle",
+      "value": "typed-sdd"
+    },
+    {
+      "key": "productName",
+      "value": "SvgWorkspacePublicRetained"
+    },
+    {
+      "key": "rootNamespace",
+      "value": "SvgWorkspacePublicRetained"
+    }
+  ]
+}

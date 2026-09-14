@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "status": "initialized",
+  "initializedAt": "2026-09-14T22:05:26Z",
+  "mode": "local",
+  "checks": {
+    "dotnetToolRestore": 0,
+    "fsggSddDoctor": 0,
+    "dotnetRestoreLocked": 0,
+    "dotnetBuildNoRestore": 0
+  },
+  "optionalIntegrations": {
+    "governance": "skipped-by-scaffold-selection",
+    "coordination": "deferred-until-public-repository-exists"
+  }
+}

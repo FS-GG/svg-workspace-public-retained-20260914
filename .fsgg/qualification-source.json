@@ -1,0 +1,100 @@
+{
+  "schema": "fsgg.svg-workspace.synthetic-receiver-source/v1",
+  "purpose": "public synthetic retained conformance receiver; no product release",
+  "route": "public-0.13-complete-adoption-then-typed-sdd",
+  "baseline": {
+    "templateVersion": "0.13.0",
+    "publicArchiveSha256": "ab72f74a76d59ad4be6f11f367bbdf1b27f8bdedae7a2e3afecbe0e4b3fac10c",
+    "archiveRetainedInRepository": false,
+    "invocation": [
+      "dotnet",
+      "new",
+      "fs-gg-fable-game",
+      "-n",
+      "SvgWorkspacePublicRetained",
+      "--lifecycle",
+      "none",
+      "--svgFoundation",
+      "true"
+    ]
+  },
+  "completeAdoption": {
+    "candidateVersion": "0.14.0",
+    "selectedCandidateSourceHead": "5ef422de9f48b9763f12794882fe2b760607873d",
+    "selectedCandidateArchiveSha256": "f301eb3e8264e2b3e9ab33f7b276f3480a7339b1cd5834a1e4876375be5758d4",
+    "selectedCandidateArchiveRetainedInRepository": false,
+    "repairSourceHead": "ec5e9e65fe2dc6f93ec16946d28f61ec2ae6d0e2",
+    "repairNativeArchiveSha256": "b72d7ea922c0e7eb276af101f81270539c2c948a25f1f672f41afede091f4589",
+    "repairNativeArchiveRetainedInRepository": false,
+    "candidateReceiverHead": "c7e2fe231d7e078e12981670ec9291ac5fa9b90e",
+    "baselineManifestSha256": "4bc5787d52cf867cdffca628a97e8822c6a23878e9870a949520c3c99f1b4335",
+    "inventorySha256": "ac155443c62185a2127179b22e92fc11219c2e900100179b2e78dfce3c8713e2",
+    "reviewDiffSha256": "a9725784782e9c5a6b46869e0b1631b3e68aedc5c764963fcca4a9cbbbe93f75",
+    "candidateManagedSha256": "96f73d0a8da70a1f1d0efd527f269c89ba9b40eefc6bc5b5919e3c530fc9f167",
+    "changes": 9,
+    "conflicts": 0,
+    "preserved": 154,
+    "evidenceRetainedInRepository": false,
+    "obsoleteFableRemoting": "retired-from-exact-public-owned-baseline",
+    "configuredMirrors": [
+      ".agents",
+      ".claude"
+    ],
+    "authoredContent": "preserved-byte-identically"
+  },
+  "lifecycle": {
+    "wizardVersion": "0.11.2",
+    "wizardPackageSha256": "ccc249af7450583f792a5089c0b16b35d5c0a82be68090b14512af488b2c6d6f",
+    "wizardDescriptorFetch": "succeeded",
+    "wizardNonemptyScaffold": "refused-scaffold.targetCollision",
+    "supportedRecovery": "fsgg-sdd scaffold --force",
+    "sddVersion": "1.8.0",
+    "sddExecutableSha256": "cc4282b6ae3084df97e6c2d913b8c447bad671b721729430120ed9968f51ae1b",
+    "parameters": {
+      "provider": "fable-game",
+      "lifecycle": "typed-sdd",
+      "bundle": "complete"
+    }
+  },
+  "retainedAuthoredSha256": {
+    ".agents/skills/local-gameplay/SKILL.md": "46c529bdbcd5a8eca08e2d42f5f4bd53ae821b82bf1ed2e19ba23072768dc4e0",
+    "authored/keymap-v1.json": "192ce49343d88aa55f1946c7db0ad210fade15a6bfce00d09e88fe1e19b8a9e3",
+    "authored/level.json": "e0b35c539e38bf6ae8cbd59cb9b4c3a2d24c24a33d74e7f983ce670233d972d7",
+    "authored/replay-v1.json": "72fea609fc9f51d3c33523bb5f1bcfb7a91452ab7f65c49ae80bab98fdc255e4"
+  },
+  "typedAuthority": {
+    "tool": "FS.GG.SDD.Artifacts/1.8.0",
+    "backend": "quint-specification-v1",
+    "profile": "fsgg-quint-profile/2",
+    "quintVersion": "0.32.0",
+    "quintSha256": "939b64095b706017f2f202c6f99c860c40be7c31bddc2b98557316e50f42cd7f",
+    "bindingSummarySha256": "c689d51d6559a56ef612b96f24026835b3e4ca96c9a622c08b094cbb216b44b3",
+    "arena": {
+      "authorReceiptSha256": "a77be9af34ae74192243f0e0a8718b7b6f54a0c5ebeb3634617c915ab81c7124",
+      "inspectReceiptSha256": "7571a00477c1e1c2a4a3607de4daf029a9ea283ed1aab3061a6c0dbfc6487731"
+    },
+    "tactical": {
+      "authorReceiptSha256": "ce180a326ed51dbc37b48591d0df120ea91032f3620a40058bafaee63ba0840c",
+      "inspectReceiptSha256": "7571a00477c1e1c2a4a3607de4daf029a9ea283ed1aab3061a6c0dbfc6487731"
+    },
+    "rawReceiptsRetainedInRepository": false
+  },
+  "qualification": {
+    "sdk": "10.0.400",
+    "domainTests": 18,
+    "protocolTests": 26,
+    "serverTests": 19,
+    "browser": {
+      "family": "chromium",
+      "passed": 5,
+      "inapplicable": 1
+    },
+    "tacticalCompatibility": "passed",
+    "releaseStaging": "workspace-v1",
+    "doctor": {
+      "toolVersion": "1.8.0",
+      "isCoherent": true,
+      "diagnostics": []
+    }
+  }
+}

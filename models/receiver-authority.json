@@ -1,0 +1,40 @@
+{
+  "schema": "fsgg.svg-workspace.receiver-model-authority/v1",
+  "producer": {
+    "package": "FS.GG.SDD.Artifacts",
+    "version": "1.8.0",
+    "backend": "quint-specification-v1",
+    "profileIdentity": "fsgg-quint-profile/2",
+    "toolchainIdentity": "79b32dacc5bb150e23c4017eef16f3f688cde062441583d5ea1ffa5cc9e62486"
+  },
+  "authoring": {
+    "agent": "qualification",
+    "session": "public-retained",
+    "authorOutcome": "succeeded",
+    "inspectOutcome": "succeeded"
+  },
+  "models": [
+    {
+      "id": "arena",
+      "workId": "svg-arena-qualification",
+      "source": "models/svg-arena/arena-rules.md",
+      "sourceSha256": "e18e7f4bd45fdc5b56ba2200c14dedf9ec3c0e88c1190202919573c0bfb11541",
+      "bindings": "models/svg-arena/arena-rules.bindings.json",
+      "bindingsSha256": "abddaa7646780f9948a05d5af1338124ce51d84c44162c9e7155ce88d145cee8",
+      "typedAuthoritySha256": "6d8882a481036cfa28569577b1a6338c8e03731bf01228fc1faeb68db42a2f8d",
+      "compilationReceiptSha256": "5198316a0c123d950c5513ac64dc6e78007420a572d00bd26fb48a9d58804052",
+      "compilationFingerprint": "6d8f9aa078d8320944488712b25e057806547f3a64a2a9303477cafc8b8a29f9"
+    },
+    {
+      "id": "tactical",
+      "workId": "svg-tactical-qualification",
+      "source": "models/svg-tactical/tactical-rules.md",
+      "sourceSha256": "a335ae4e9d4d7c494da06402be962053dec585150af208a365970186c683711e",
+      "bindings": "models/svg-tactical/tactical-rules.bindings.json",
+      "bindingsSha256": "2beda66fa6143c79470ca9d62a68108c6d1658b5c68f868a4b4cbe90571749e1",
+      "typedAuthoritySha256": "c9384b2dbb92737a2af66184df35d7a7675482311bea368750a2a8ec1d1e3fc4",
+      "compilationReceiptSha256": "729b5f9956ad68371ce6ec16f01de32f14be556e442556a79f0e4389313bf0fb",
+      "compilationFingerprint": "392d051d1150d9d2571759f909f0d6c481121bf3abf115b148c715de719f1631"
+    }
+  ]
+}
