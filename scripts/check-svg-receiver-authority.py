@@ -15,7 +15,7 @@ assert len(producer.get('toolchainIdentity', '')) == 64
 assert value.get('authoring', {}).get('authorOutcome') == 'succeeded'
 assert value.get('authoring', {}).get('inspectOutcome') == 'succeeded'
 rows = value.get('models', [])
-assert [row.get('id') for row in rows] == ['arena', 'tactical']
+assert [row.get('id') for row in rows] == ['arena', 'tactical', 'arcade']
 for row in rows:
     for key in ('source', 'bindings'):
         relative = Path(row[key])

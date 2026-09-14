@@ -662,6 +662,21 @@ test("selected tactical and arcade examples load and execute their engine paths"
     await expect.poll(async () => Number(await arcade.getAttribute("data-hazard-x"))).not.toBe(firstHazard);
     expect(Number(await arcade.getAttribute("data-x"))).toBe(stationaryX);
 
+    await arcade.focus();
+    await page.keyboard.down("d");
+    await expect.poll(async () => Number(await arcade.getAttribute("data-x")), { timeout: 3000, intervals: [5] }).toBeGreaterThan(50);
+    await page.keyboard.up("d");
+    await page.keyboard.down("w");
+    await expect.poll(async () => Number(await arcade.getAttribute("data-y")), { timeout: 3000, intervals: [5] }).toBeLessThan(28);
+    await page.keyboard.up("w");
+    expect(Number(await arcade.getAttribute("data-y"))).toBeGreaterThanOrEqual(14);
+    await page.getByRole("button", { name: "Arcade interact" }).click();
+    await expect(arcade).toHaveAttribute("data-score", "125");
+    await page.getByRole("button", { name: "Arcade restart" }).click();
+    await expect(arcade).toHaveAttribute("data-score", "0");
+    await expect(arcade).toHaveAttribute("data-x", "12");
+    await expect(arcade).toHaveAttribute("data-y", "54");
+
     const before = Number(await arcade.getAttribute("data-x"));
     const pointerRight = page.getByRole("button", { name: "Arcade move right" });
     await pointerRight.dispatchEvent("pointerdown", { pointerId: 7, pointerType: "mouse" });

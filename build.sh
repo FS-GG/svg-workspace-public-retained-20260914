@@ -82,6 +82,9 @@ fi
 if [[ -f models/svg-tactical/tactical-rules.md && -f Conformance/GeneratedTacticalRuleModel.fs ]]; then
   bash scripts/check-svg-tactical-model.sh
 fi
+if [[ -f models/svg-arcade/arcade-rules.md ]]; then
+  bash scripts/check-svg-arcade-model.sh
+fi
 
 dotnet test Server.Tests/Server.Tests.fsproj --no-build --logger "trx;LogFileName=server.trx" --results-directory artifacts/test-results
 

@@ -21,6 +21,7 @@ FABLE_PROJECT="$SCRIPT_DIR/CodecProbe.Fable/CodecProbe.Fable.fsproj"
 FABLE_ENTRY="$SCRIPT_DIR/CodecProbe.Fable/Program.js"
 MODEL_TRACE="$WORKSPACE_ROOT/Conformance/arena-rules.trace"
 TACTICAL_TRACE="$WORKSPACE_ROOT/Conformance/tactical-rules.trace"
+ARCADE_TRACE="$WORKSPACE_ROOT/Conformance/arcade-rules.trace"
 
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
@@ -115,8 +116,8 @@ expect_ok "gameplay metadata identity: net de-DE fractional semantics" net write
 expect_ok "gameplay metadata identity: fable fractional semantics" fbl write-gameplay-identity-proof "$TMP/identity-fable.txt"
 expect_ok "arena model correspondence: net reducer" net write-arena-model-correspondence "$MODEL_TRACE" "$TMP/model-net.txt"
 expect_ok "arena model correspondence: fable reducer" fbl write-arena-model-correspondence "$MODEL_TRACE" "$TMP/model-fable.txt"
-expect_ok "arcade arena-model correspondence/content refusal: net reducer" net write-arcade-proof "$MODEL_TRACE" "$TMP/arcade-net.txt"
-expect_ok "arcade arena-model correspondence/content refusal: fable reducer" fbl write-arcade-proof "$MODEL_TRACE" "$TMP/arcade-fable.txt"
+expect_ok "arcade model correspondence/content refusal: net reducer" net write-arcade-proof "$ARCADE_TRACE" "$TMP/arcade-net.txt"
+expect_ok "arcade model correspondence/content refusal: fable reducer" fbl write-arcade-proof "$ARCADE_TRACE" "$TMP/arcade-fable.txt"
 expect_ok "tactical model/rules: net reducer" net write-tactical-proof "$TACTICAL_TRACE" "$TMP/tactical-net.txt"
 expect_ok "tactical model/rules: fable reducer" fbl write-tactical-proof "$TACTICAL_TRACE" "$TMP/tactical-fable.txt"
 cmp "$TMP/arena-net.txt" "$TMP/arena-net-de.txt" || {
