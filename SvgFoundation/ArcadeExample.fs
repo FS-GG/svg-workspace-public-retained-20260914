@@ -17,7 +17,7 @@ open SvgWorkspacePublicRetained.ArcadeRules
 let private seedJson: string = jsNative
 
 [<Literal>]
-let private seedSha256 = "692ca87a93aceba48da8d6f13c48610d4edf556ed49ef5cb974f3f1edd7db435"
+let private seedSha256 = "fa4930dcdb543f8b88b795cbf6fda63598d290d4c9b4965edd00d8ba0bd89b88"
 
 let private rawSeed: obj = JS.JSON.parse seedJson
 let private number (value: obj) = unbox<float> value

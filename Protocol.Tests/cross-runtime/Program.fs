@@ -264,17 +264,11 @@ let private arcadeProof traceFile =
         let boolean value = if value then "true" else "false"
         let outcome = match state.Outcome with Arcade.ArcadeOutcome.Playing -> "playing" | Arcade.ArcadeOutcome.Won -> "won" | Arcade.ArcadeOutcome.Lost -> "lost"
         $"health:{state.Health}|score:{state.Score}|collected:{boolean state.Collected}|outcome:{outcome}|hazardContact:{boolean state.HazardContact}"
-    let omitRound (line: string) =
-        let marker = "|round:"
-        let start = line.IndexOf(marker)
-        let finish = if start < 0 then -1 else line.IndexOf('|', start + marker.Length)
-        if start < 0 || finish < 0 then failwith $"arena model observation lacks round field: {line}"
-        line.Substring(0, start) + line.Substring(finish)
     let baseContent: Arcade.ArcadeContent =
         { Id = "continuous-arcade"; ContentId = "sha256:arcade-cross-runtime"
           Width = 220.0; Height = 120.0
           Spawn = { X = 12.0; Y = 54.0; Width = 10.0; Height = 10.0 }; InitialHealth = 3
-          CollectibleX = 17.0; CollectibleY = 59.0; CollectibleScore = 100
+          CollectibleX = 17.0; CollectibleY = 59.0; CollectibleScore = 125
           Hazard = { X = 160.0; Y = 90.0; Width = 18.0; Height = 12.0 }; HazardVelocity = 1.5; HazardDamage = 1
           Goal = { X = 12.0; Y = 54.0; Width = 16.0; Height = 18.0 } }
     let contract = Arcade.contractForDefinition baseContent
@@ -302,6 +296,22 @@ let private arcadeProof traceFile =
     match contract.Restore staleSnapshot with
     | Error failure when failure.Code = "arcade.snapshot.compatibility" -> ()
     | result -> failwith $"arcade accepted foreign content snapshot: {result}"
+    let oldRewardContent =
+        { baseContent with
+            ContentId = "sha256:692ca87a93aceba48da8d6f13c48610d4edf556ed49ef5cb974f3f1edd7db435"
+            CollectibleScore = 100 }
+    let oldRewardSnapshot =
+        let oldContract = Arcade.contractForDefinition oldRewardContent
+        oldContract.Snapshot (Arcade.initialState oldRewardContent)
+    match contract.Restore oldRewardSnapshot with
+    | Error failure when failure.Code = "arcade.snapshot.compatibility" -> ()
+    | result -> failwith $"arcade accepted the prior reward rule snapshot: {result}"
+    let oldRewardRecording =
+        ReplayRecorder.create oldRewardSnapshot (Arcade.canonicalState oldRewardSnapshot.Value)
+        |> Result.defaultWith (fun issues -> failwithf "%A" issues)
+    match Replay.seek contract Arcade.canonicalState (fun _ -> false) 0UL oldRewardRecording with
+    | Ok(ReplayRunOutcome.ContractRefused(0UL, failure)) when failure.Code = "arcade.snapshot.compatibility" -> ()
+    | result -> failwith $"arcade replay accepted the prior reward rule snapshot: {result}"
     let wrongSession = { contract.Snapshot initial with SessionId = "foreign-session" }
     match contract.Restore wrongSession with
     | Error failure when failure.Code = "arcade.snapshot.session" -> ()
@@ -319,7 +329,6 @@ let private arcadeProof traceFile =
         readFile traceFile
         |> fun value -> value.Replace("\r\n", "\n").TrimEnd().Split('\n')
         |> Array.toList
-        |> List.map omitRound
     if observations <> expected then
         let actions =
             [ "init"; "collect"; "reachGoal"; "terminalGuard"; "restart"; "hazardContact"

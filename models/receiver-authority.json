@@ -9,7 +9,7 @@
   },
   "authoring": {
     "agent": "qualification",
-    "session": "public-retained",
+    "session": "retained-semantic-score-125",
     "authorOutcome": "succeeded",
     "inspectOutcome": "succeeded"
   },
@@ -35,6 +35,17 @@
       "typedAuthoritySha256": "c9384b2dbb92737a2af66184df35d7a7675482311bea368750a2a8ec1d1e3fc4",
       "compilationReceiptSha256": "729b5f9956ad68371ce6ec16f01de32f14be556e442556a79f0e4389313bf0fb",
       "compilationFingerprint": "392d051d1150d9d2571759f909f0d6c481121bf3abf115b148c715de719f1631"
+    },
+    {
+      "id": "arcade",
+      "workId": "svg-arcade-qualification",
+      "source": "models/svg-arcade/arcade-rules.md",
+      "sourceSha256": "44e1b0ecee97a45ceb7ad9deea43ee40692c69acac22c5ac733dca46f053dec1",
+      "bindings": "models/svg-arcade/arcade-rules.bindings.json",
+      "bindingsSha256": "ebbca3a66e3ea30f191656eb842f5fbbc7567ef7e56eadac4cfc1325d09bd7d4",
+      "typedAuthoritySha256": "5276b8dab4a83ca4eabb8c13d0af639ea36c904b328346a96ed886708ed51a6c",
+      "compilationReceiptSha256": "6012079973d2c4f747eb9bb67234a8b7d6578d985ba4309d50743d7005bf6318",
+      "compilationFingerprint": "32f2ce9a6e4598fbb44822a90a77176f6384e44a8a7e9d06284215d19970775f"
     }
   ]
 }
