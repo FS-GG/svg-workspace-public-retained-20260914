@@ -12,6 +12,7 @@
     <Compile Include="../../../Protocol/Http.fs" />
     <Compile Include="../../../Protocol/Realtime.fs" />
     <Compile Include="../../../Conformance/SceneSchema.fs" Link="SceneSchema.fs" />
+    <Compile Include="../../../SvgFoundation/ContinuousPlayer.fs" Link="ContinuousPlayer.fs" />
     <Compile Include="../Program.fs" />
   </ItemGroup>
   <ItemGroup>

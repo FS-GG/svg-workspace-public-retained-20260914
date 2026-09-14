@@ -5,6 +5,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="../../../Conformance/SceneSchema.fs" Link="SceneSchema.fs" />
+    <Compile Include="../../../SvgFoundation/ContinuousPlayer.fs" Link="ContinuousPlayer.fs" />
     <Compile Include="../Program.fs" />
   </ItemGroup>
   <ItemGroup>
