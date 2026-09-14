@@ -158,13 +158,14 @@ cmp "$TMP/tactical-net.txt" "$TMP/tactical-fable.txt" || {
 MUTATED_ROOT="$TMP/mutated-workspace"
 MUTATION_EVIDENCE_DIR="${MODEL_MUTATION_EVIDENCE_DIR:-$TMP/mutation-evidence}"
 mkdir -p "$MUTATION_EVIDENCE_DIR"
-mkdir -p "$MUTATED_ROOT/Protocol.Tests/cross-runtime/CodecProbe.Net" "$MUTATED_ROOT/Conformance"
+mkdir -p "$MUTATED_ROOT/Protocol.Tests/cross-runtime/CodecProbe.Net" "$MUTATED_ROOT/Conformance" "$MUTATED_ROOT/SvgFoundation"
 cp "$WORKSPACE_ROOT/Directory.Build.props" "$WORKSPACE_ROOT/NuGet.config" "$WORKSPACE_ROOT/global.json" "$MUTATED_ROOT/"
 cp -a "$WORKSPACE_ROOT/.nuget" "$WORKSPACE_ROOT/Domain" "$WORKSPACE_ROOT/Protocol" "$MUTATED_ROOT/"
 cp "$SCRIPT_DIR/Program.fs" "$MUTATED_ROOT/Protocol.Tests/cross-runtime/Program.fs"
 cp "$NET_PROJECT" "$MUTATED_ROOT/Protocol.Tests/cross-runtime/CodecProbe.Net/CodecProbe.Net.fsproj"
 cp "$SCRIPT_DIR/CodecProbe.Net/packages.lock.json" "$MUTATED_ROOT/Protocol.Tests/cross-runtime/CodecProbe.Net/packages.lock.json"
 cp "$WORKSPACE_ROOT/Conformance/SceneSchema.fs" "$MUTATED_ROOT/Conformance/SceneSchema.fs"
+cp "$WORKSPACE_ROOT/SvgFoundation/ContinuousPlayer.fs" "$MUTATED_ROOT/SvgFoundation/ContinuousPlayer.fs"
 
 run_mutant() {
   local label="$1"
